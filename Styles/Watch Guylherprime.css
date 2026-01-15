@@ -1,0 +1,366 @@
+body {
+    background-color: black;
+    scrollbar-color: rgba(255, 0, 0, 0.753) rgb(54, 54, 54);
+    scrollbar-width: thin;
+
+}
+
+
+#UpperBody {
+    display: grid;
+    grid-template-columns: 5% minmax(88%, 95%) minmax(5%, 12%);
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 5px;
+
+}
+
+#LowerBody {
+    background-color: rgb(1, 70, 199);
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 0px;
+
+}
+
+.EpisodeSelector {
+    display: grid;
+    grid-template-columns: auto-fit;
+    background-color: rgb(0, 68, 196);
+    width: 100%;
+
+}
+.container {
+    background-color: rgb(52, 123, 255);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 300px;
+
+}
+
+.Left {
+    grid-column-start: 1;
+
+}
+
+.Episodes {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: repeat(auto-fit, 40%);
+    margin-left: 6%;
+    border: 1px solid white;
+    overflow-y: scroll;
+    height: 300px;
+    scrollbar-color: rgba(255, 0, 0, 0.753) rgb(54, 54, 54);
+    scrollbar-width: thin;
+    background-color: rgb(151, 151, 151);
+
+}
+
+.Episode {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(0, 110, 255);
+    height: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    transition: opacity 0.5s;
+
+}
+
+.Episode:hover {
+    opacity: 0.6;
+
+}
+
+.EpisodeImage {
+    width: 90%;
+    height: 7rem;
+}
+
+.VideoName {
+    font-size: x-large;
+    text-align: center;
+    align-self: center;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+#Header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(35, 112, 255);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 10rem);
+
+}
+
+.About {
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 112, 255);
+    border: 2px solid rgb(255, 255, 255);
+    mask-image: linear-gradient(to left, black 60%, transparent 100%);
+    transition: background-color 0.25s;
+    
+}
+
+.About:hover {
+    background-color: rgb(27, 106, 252);
+
+}
+
+#HeaderBody {
+    position: sticky;
+
+}
+
+#LogoImage {
+    height: 5rem;
+    width: 7rem;
+    margin-left: 2%;
+    transition: background-color 0.5s;
+
+}
+
+#LogoImage:hover {
+    background-color: rgb(16, 100, 255);
+
+}
+
+
+.Main-Film {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: minmax(25%, 50%) minmax(50%, 80%);
+    background-color: rgb(37, 37, 37);
+
+}
+
+.Description {
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+    justify-content: center;
+
+}
+
+.Film-Image {
+    height: 500px;
+    width: 100%;
+    mask-image: linear-gradient(to left, black 60%, transparent 100%);
+
+}
+
+.Film-Name {
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 25px;
+    margin-top: 50px;
+    color: white;
+
+}
+
+.Film-Description {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: white;
+    margin-left: 12%;
+    grid-row-start: 2;
+    text-align: center;
+    
+}
+
+.Film-Description-2 {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin-left: 30px;
+    min-width: 250px;
+    max-width: 450px;
+    color: white;
+    
+}
+
+.Watch-Button {
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    margin-left: 32px;
+    width: 150px;
+    height: 75px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+
+}
+
+.MovieVideo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    height: 800px;
+}
+
+.MovieWatchTitle {
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-left: 15%;
+
+}
+
+@media screen and (max-width: 726px) {
+
+.container {
+    height: 400px;
+}
+
+#Header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(20, 20, 20);
+    display: grid;
+    grid-template-columns: repeat(3, 50%);
+    grid-template-rows: 100px 50px;
+
+}
+
+#LogoImage {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 90%;
+}
+
+.About {
+    grid-row-start: 2;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    mask-image: linear-gradient(to right, black 60%, transparent 100%);
+
+}
+
+.Main-Film {
+    display: grid;
+    grid-template-columns:  minmax(50%, 100%);
+    grid-template-rows: minmax(70%, 80%);
+    align-content: center;
+    
+
+}
+
+.Film-Image {
+    height: 480px;
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    mask-image: linear-gradient(to left, black 60%, transparent 100%);
+
+}
+
+.Film-Name {
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+    color: white;
+
+
+}
+
+.Description {
+    text-align: center;
+    justify-content: center;
+}
+
+.Film-Description {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 23%;
+    color: white;
+
+}
+
+.Film-Description-2 {
+    display: none;
+    color: white;
+
+}
+
+.Watch-Button {
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: black;
+    margin-left: 0px;
+    
+}
+
+
+#LowerBody {
+    background-color: rgb(20, 20, 20);
+    display: grid;
+    grid-template-columns: 350px;
+    text-align: center;
+    grid-gap: 15px;
+
+}
+
+.EpisodeImage {
+    height: 7rem;
+}
+
+.VideoName {
+    align-self: center;
+    font-size: large;
+}
+
+}
+
+@media screen and (max-width: 550px) {
+
+.VideoName {
+    font-size: medium;
+}
+
+}
+
+@media screen and (max-width: 460px) {
+ 
+.MovieWatchTitle {
+    text-align: center;
+}
+
+.container {
+    height: 800px;
+    grid-template-rows: 50% 60%;
+}
+
+.Left {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-right: 23%;
+    grid-row-start: 1;
+
+}
+
+.right {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-right: 5%;
+}
+
+.VideoName {
+    align-self: center;
+}
+
+.EpisodeImage {
+    height: 7rem;
+}
+
+
+}

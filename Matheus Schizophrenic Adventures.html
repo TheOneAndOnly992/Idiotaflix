@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idiotaflix</title>
+    <link rel="stylesheet" href="Styles/Movie Watch Style.css">
+    <script src="Scripts/Script.js"></script>
+</head>
+<body>
+<div id="UpperBody">
+    <nav id="Header">
+        <img src="Images/Logo.webp" alt="IdiotaFLix" id="LogoImage" onclick="HomePage()"">
+        <button class="About" onclick="AboutPage()">
+            Sobre
+        </button>
+    </nav>
+    <video src="Filmes/Matheus and Schizophrenic Adventures/A strange beggining.mp4" controls class="MovieVideo" ></video>
+
+</div>
+    <div class="container">
+        <div class="Left">
+            <h1 class="MovieWatchTitle"> Matheus and Schizophrenic Adventures </h1>
+            <p class="Film-Description">
+               Siga Matheus em suas aventuras esquizofrenicas! Veja ele derrotar inimigos e desbloquear novos poderes jamais visto antes!!!
+            </p>
+        </div>
+
+        <div class="right">
+        <div class="Episodes">
+            <button class="Episode" onclick="Change(this)">
+                <img src="Images/EpisodeCovers/Matheus Schizophrenic Adventures.webp" alt="" class="EpisodeImage">
+                <p class="VideoName">A Strange beggining</p>
+                <source src="Filmes/Matheus and Schizophrenic Adventures/A strange beggining.mp4"> 
+            </button>
+            <button class="Episode" onclick="Change(this)">
+                <img src="Images/EpisodeCovers/Matheus Schizophrenic Adventures.webp" alt="" class="EpisodeImage">
+                <p class="VideoName">Asylum Breakout</p>
+                <source src="Filmes/Matheus and Schizophrenic Adventures/Asylum Breakout.mp4"> 
+            </button>
+            <button class="Episode" onclick="Change(this)">
+                <img src="Images/EpisodeCovers/Matheus Schizophrenic Adventures.webp" alt="" class="EpisodeImage">
+                <p class="VideoName">Kung Fu Master Battle</p>
+                <source src="Filmes/Matheus and Schizophrenic Adventures/Kung fu Master Battle.mp4"> 
+            </button>
+            <button class="Episode" onclick="Change(this)">
+                <img src="Images/EpisodeCovers/Matheus Schizophrenic Adventures.webp" alt="" class="EpisodeImage">
+                <p class="VideoName">Guylherme Arrives</p>
+                <source src="Filmes/Matheus and Schizophrenic Adventures/Guylherme Arrives.mp4"> 
+            </button>
+            <button class="Episode" onclick="Change(this)">
+                <img src="Images/EpisodeCovers/Matheus Schizophrenic Adventures.webp" alt="" class="EpisodeImage">
+                <p class="VideoName">Guylherme Dance</p>
+                <source src="Filmes/Matheus and Schizophrenic Adventures/Guylherme Dance.mp4"> 
+            </button>
+
+
+        </div>
+        </div>
+    </div>
+</body>
+</html>

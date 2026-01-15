@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idiotaflix</title>
+    <link rel="stylesheet" href="Styles/Movie Watch Style.css">
+    <script src="Scripts/Script.js"></script>
+</head>
+<body>
+<div id="UpperBody">
+    <nav id="Header">
+        <img src="Images/Logo.webp" alt="IdiotaFLix" id="LogoImage" onclick="HomePage()"">
+        <button class="About" onclick="AboutPage()">
+            Sobre
+        </button>
+    </nav>
+    <video src="Filmes/Marconha Kaisen/Cogumelo roxo.mp4" controls class="MovieVideo" ></video>
+
+</div>
+    <div class="container">
+        <div class="Left">
+            <h1 class="MovieWatchTitle"> Marconha Kaisen </h1>
+            <p class="Film-Description">
+               Jujutsu kaisen, mas com o marcos!11!111111!!!! (e o guylherme ta ai tambem ne)
+            </p>
+        </div>
+
+        <div class="right">
+        <div class="Episodes">
+            <button class="Episode" onclick="Change(this)">
+                <img src="Images/EpisodeCovers/MARCONHA KAISEN.webp" alt="" class="EpisodeImage">
+                <p class="VideoName">Cogumelo Roxo</p>
+                <source src="Filmes/Marconha Kaisen/Cogumelo roxo.mp4"> 
+            </button>
+            <button class="Episode" onclick="Change(this)">
+                <img src="Images/EpisodeCovers/MARCONHA KAISEN.webp" alt="" class="EpisodeImage">
+                <p class="VideoName">Expansão de Dominio</p>
+                <source src="Filmes/Marconha Kaisen/Expansão de dominio.mp4"> 
+            </button>
+            <button class="Episode" onclick="Change(this)">
+                <img src="Images/EpisodeCovers/MARCONHA KAISEN.webp" alt="" class="EpisodeImage">
+                <p class="VideoName">Guylherme filler</p>
+                <source src="Filmes/Marconha Kaisen/Guylherme filler.mp4"> 
+            </button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
