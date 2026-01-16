@@ -77,7 +77,7 @@ body {
 #LowerBody {
     background-color: rgb(37, 37, 37);
     display: grid;
-    grid-template-columns: repeat(8, 350px);
+    grid-template-columns: repeat(10, 350px);
     overflow-x: scroll;
     scrollbar-color: rgba(255, 0, 0, 0.753) rgb(54, 54, 54);
     scrollbar-width: thin;
